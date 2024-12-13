@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Shop in Iloilo City</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+                background-image: url(img/cafe.jpg)
+        }
+
+        .row {
+            padding: 50px;
+        }
+
+        .col1 {
+            width: 25%;
+            padding: 10px 10px 20px 10px;
+            border: 2px solid gray;
+            background-color: rgba(255, 255, 255, 0.82);
+            box-shadow:5px 5px 5px rgb(105, 103, 103);
+            float: left;
+            -ms-transform: rotate(8deg);
+            -webkit-transform: rotate(8deg);
+            transform: rotate(8deg);
+            transition: transform 0.5s ease;
+        }
+
+        .col1 span {
+            font-weight: bold;
+            font-size: 25px;
+            
+    
+        }
+
+        .col1:hover {
+            transform: rotate(0deg);
+            transform: scale(1.2);
+        }
+
+        .col2 {
+            width: 25%;
+            padding: 10px 10px 20px 10px;
+            border: 2px solid gray;
+            background-color: rgba(255, 255, 255, 0.82);
+            box-shadow: 5px 5px 5px rgb(105, 103, 103);
+            float: left;
+            -ms-transform: rotate(-8deg);
+            -webkit-transform: rotate(-8deg);
+            transform: rotate(-8deg);
+            transition: transform 0.5s ease;
+        }
+
+        .col2 span {
+            font-weight: bold;
+            font-size: 25px;
+        }
+
+        .col2:hover {
+            transform: rotate(0deg);
+            transform: scale(1.2);
+        }
+
+        .row:after{
+            content: " ";
+            display: table;
+            clear:both
+        }
+
+        @media screen and (max-width: 600px) {
+            .col1 {
+                width: 100%;
+            }
+            .col2 {
+                width: 100%;
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="row">
+        <div class="col1">
+            <img src="img/molo cafe.jpg" alt="" width="100%">
+            <span>Molo Mansion Cafe</span>
+            <p>Locsin Street Molo Mansion, Iloilo City, Iloilo Province 5000 Philippines</p>
+            <p class="desc1">
+                Right at the side of the mansion is the Molo Mansion Cafe.
+                After enjoying exploring the mansion, rest your tired legs at the cafe while enjoying your favorite cold and hot drinks, and food such as callos, dinuguan, pancit molo. 
+                Not to be missed is the blue ternate ice cream.
+            </p>
+        </div>
+
+        <div class="col2">
+            <img src="img/starbucks.jpg" alt="" width="100%">
+            <span>Starbucks</span>
+            <p>Ledesma Street Robinsons Place, Iloilo City, Iloilo Province 5000 Philippines
+            </p>
+            <p class="desc2">
+                Coffee is a masterpiece here at Starbucks. There's no question when it comes to quality of food and coffee, as well their customer service. 
+                Wherever you are in the world Starbucks is always a must visit for coffee lovers.
+            </p>
+        </div>
+
+        <div class="col1">
+            <img src="img/coffee break.jpg" alt="" width="100%">
+            <span>Coffee Break</span>
+            <p>Door 5, Q.H.P. Business Center,
+                Arsenal St. Iloilo City, 5000,
+                Philippines</p>
+            <p class="desc1">
+                The goodness of the Coffeebreak experience goes beyond the warmth and delight of its impressive products. 
+                It takes pride in the excellent and quality service it offers.
+            </p>
+        </div>
+        
+        <div class="col2">
+            <img src="img/Ceylon Coffee Club.jpg" alt="" width="100%">
+            <span>Ceylon Coffee Club</span>
+            <p>A2 Ground Floor One Madison Place Megaworld Taft Boulevard Mandurriao Iloilo City, Iloilo City, Philippines</p>
+            <p class="desc2">
+                The Ceylon Coffee Club in Iloilo City is a charming and cozy cafe located in the heart of the city, offering a delightful escape with its tranquil ambiance and delicious coffee. 
+                The cafe boasts a wide selection of Ceylonese coffee blends, expertly brewed to perfection, and served with a touch of warm hospitality. 
+                Whether you’re craving a rich, velvety cappuccino or a refreshing iced latte, the Ceylon Coffee Club is the perfect destination to savor exceptional coffee in a welcoming setting.
+            </p>
+        </div>
+    </div>
+</body>
+</html>
